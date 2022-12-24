@@ -113,6 +113,6 @@ class DataManager:
 
 
         # все готово для добавления сотрудника
-        self.employees.append(Employee(TypeOfDepartments.stuff, self.persons[person_index], self.positions[position_index])) 
+        self.employees.append(Employee(TypeOfDepartments(selectedDepartment), self.persons[person_index], self.positions[position_index])) 
 
         return
