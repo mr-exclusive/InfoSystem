@@ -1,12 +1,12 @@
 ﻿
 # Класс для работы с файлами и вводом/выводом
-
+from enum import Enum
 from typing import Tuple
 
 
 class IO_system:
 
-    def read_statement(file_name:str):
+    def read_statement(self, file_name:str):
 
         # Функция чтения файла состяния базы
         # вызываем в начале работы программы из DataManager
@@ -15,7 +15,7 @@ class IO_system:
 
         return
 
-    def write_statement(statement:Tuple):
+    def write_statement(self, statement:Tuple):
 
         # Функция записи состояния базы данных в файл
         # вызываем в конце работы программы из DataManager
@@ -24,7 +24,7 @@ class IO_system:
         return
     
 
-    def read_index(message:str, minIndex:int, maxIndex:int):
+    def read_index(self, message:str, minIndex:int, maxIndex:int):
 
         index = minIndex - 1
 
@@ -35,7 +35,7 @@ class IO_system:
         return index
     
 
-    def print_a_list_with_indexes(list_to_print):
+    def print_a_list_with_indexes(self, list_to_print):
 
         index = 1
 
@@ -44,6 +44,21 @@ class IO_system:
             print(str(index) + '. ' + item.to_string())
 
             index += 1
+
+    def select_from_enum(self, something: Enum, msg: str):
+
+        for some in something:
+            print(f'{some.value}: {some.name}')
+
+        available_codes = [i for i in something]
+
+        selected_code = -1
+
+        while selected_code not in available_codes:
+            selected_code = int(input(msg))
+        
+        return something(selected_code)
+
 
     pass
 
