@@ -1,3 +1,5 @@
+# -*- coding: cp1251 -*-
+
 from TypeOfPositions import TypeOfPositions
 from TypeOfLevels import TypeOfLevels
 

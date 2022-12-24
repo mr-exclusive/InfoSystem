@@ -1,3 +1,5 @@
+# -*- coding: cp1251 -*-
+
 # Класс персоны (человека)
 from datetime import date
 from TypeOfGenders import TypeOfGenders

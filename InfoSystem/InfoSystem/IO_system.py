@@ -1,3 +1,5 @@
+# -*- coding: cp1251 -*-
+
 # Класс для работы с файлами и вводом/выводом
 
 from typing import Tuple
