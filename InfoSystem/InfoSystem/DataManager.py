@@ -12,6 +12,7 @@ from TypeOfGenders import TypeOfGenders
 from TypeOfDepartments import TypeOfDepartments
 from Person import Person
 from IO_system import IO_system
+from Employee import Employee
 
 class DataManager:
     
@@ -19,7 +20,7 @@ class DataManager:
 
     persons = [] # массив людей. Элементы массива - экземпляры класса Person
 
-    employees = [] # сотрудников.  Элементы массива - кортеж (PersonID, PositionID, TypeOfDepartment)
+    employees = [] # сотрудников.  Элементы массива - экземпляр класса Employee
 
 
     # Обратите внимание. Тут мы создаем не какие-то повисающие в воздухе пременные, а модифицируем переменные данного
@@ -47,9 +48,9 @@ class DataManager:
 
         self.employees = []
 
-        self.employees.append((0, 0, TypeOfDepartments.head))
+        self.employees.append(Employee(TypeOfDepartments.head, self.persons[0], self.positions[0]))
         
-        self.employees.append((2, 1, TypeOfDepartments.stuff))
+        self.employees.append(Employee(TypeOfDepartments.stuff, self.persons[1], self.positions[2]))
 
         # Теперь мы модем добавить человека с помощью консоли (завернув это в функцию)
         # После назначить должность. Перед эти предждложить выбрать человека из списка (ввод тлько номера из имеющися)  и тд
@@ -112,6 +113,6 @@ class DataManager:
 
 
         # все готово для добавления сотрудника
-        self.employees.append((person_index, position_index, TypeOfDepartments(selectedDepartment))) 
+        self.employees.append(Employee(TypeOfDepartments.stuff, self.persons[person_index], self.positions[position_index])) 
 
         return
