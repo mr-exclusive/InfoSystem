@@ -8,7 +8,7 @@ from TypeOfDepartments import TypeOfDepartments
 
 class QueryManager:
 
-    def EmpluyeesFromDepartmentQuery(dep:TypeOfDepartments, dataManager:DataManager):
+    def EmployeesFromDepartmentQuery(dep:TypeOfDepartments, dataManager:DataManager):
 
         result = []
 
