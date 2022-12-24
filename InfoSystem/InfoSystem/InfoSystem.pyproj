@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>55db31af-4c71-43e0-ba83-f65f3f51063d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>info_system.py</StartupFile>
+    <StartupFile>InfoSystem.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,16 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="data_manager.py" />
-    <Compile Include="type_of_departments.py" />
+    <Compile Include="DataManager.py" />
+    <Compile Include="TypeOfDepartments.py" />
     <Compile Include="Person.py" />
-    <Compile Include="info_system.py" />
-    <Compile Include="io_system.py" />
-    <Compile Include="job_position.py" />
-    <Compile Include="type_of_positions.py" />
-    <Compile Include="query_manager.py" />
-    <Compile Include="type_of_genders.py" />
-    <Compile Include="type_of_levels.py" />
+    <Compile Include="InfoSystem.py" />
+    <Compile Include="IO_system.py" />
+    <Compile Include="Position.py" />
+    <Compile Include="TypeOfPositions.py" />
+    <Compile Include="QueryManager.py" />
+    <Compile Include="TypeOfGenders.py" />
+    <Compile Include="TypeOfLevels.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.md" />

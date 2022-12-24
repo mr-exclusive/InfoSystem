@@ -1,17 +1,16 @@
-# -*- coding: cp1251 -*-
-
+п»ї
 from TypeOfPositions import TypeOfPositions
 from TypeOfLevels import TypeOfLevels
 
 class Position:
     
-    # Зарплата
+    # Р—Р°СЂРїР»Р°С‚Р°
     salary: float
 
-    # Тип ддолжности
+    # РўРёРї РґРґРѕР»Р¶РЅРѕСЃС‚Рё
     position_type: TypeOfPositions
 
-    # Уровень должности
+    # РЈСЂРѕРІРµРЅСЊ РґРѕР»Р¶РЅРѕСЃС‚Рё
     position_level: TypeOfLevels
 
     def __init__ (self, salary:float,position_type:TypeOfPositions, position_level:TypeOfLevels):
@@ -22,7 +21,7 @@ class Position:
 
         self.position_level = position_level
 
-    # Функция представления должности в виде строки (вывод на консоль)
+    # Р¤СѓРЅРєС†РёСЏ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ РґРѕР»Р¶РЅРѕСЃС‚Рё РІ РІРёРґРµ СЃС‚СЂРѕРєРё (РІС‹РІРѕРґ РЅР° РєРѕРЅСЃРѕР»СЊ)
     def to_string(self):
 
-        return str(self.position_level) + ' ' + str(self.position_type) + ' (' + str(self.salary) + ' рублей)'
+        return str(self.position_level) + ' ' + str(self.position_type) + ' (' + str(self.salary) + ' СЂСѓР±Р»РµР№)'

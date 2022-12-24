@@ -1,5 +1,4 @@
-# -*- coding: cp1251 -*-
-
+﻿
 from enum import Enum
 
 class TypeOfPositions(Enum):
